@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portofolio</title>
+        <!---Link to font awesome website-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!----link to css file for styles-->
+        <link rel="stylesheet" href="porto.css">
+    </head>
+    <body>
+        <!----header with logo and navigation-->
+        <header>
+            <a href="#" class="logo">
+                <i class="fas fa-code logo-icon"></i>
+                <span class="logo-text">Jevon</span>
+            </a>
+
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!----hero section-->
+        <section class="hero" id="home">
+            <div class="content">
+                <h1>Jevon Agnibrata</h1>
+                <h2>Junior <span class="typing-text">Frontend Developer</span></h2>
+                <p>
+                    I create responsive, user-friendly web experiences with cutting-edge 
+                    technology. With over 4 Months of experience in frontend development, 
+                    I specialize in turning complex problems into simple, beautiful designs.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i>View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i>Contact Me
+                    </a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+
+            <div class="profile-container">
+                <div class="border-outer"></div>
+                <div class="border-middle"></div>
+                <div class="border-inner"></div>
+                <div class="border-container"></div>
+                <div class="pulse-ring"></div>
+                <div class="pulse-ring"></div>
+                <div class="pulse-ring"></div>
+                <img src="profile.jpeg" width="240px" alt="profile picture" class="profile-img">
+            </div>
+        </section>
+
+        <!-- Section About (tambahkan id about agar link navigasi berfungsi) -->
+        <section id="about" style="padding: 40px 20px; max-width: 1200px; margin: 0 auto; color: #c2c6d3;">
+            <h1 style="text-align: center;">Jevon</h1>
+            <p>Perkenalkan nama saya jevon dan aku berusia 15 tahun. Saat ini aku berumur 15 tahun dan aku memiliki beberapa proyek seperti dibawah ini.</p>
+        </section>
+        <h1 style="text-align: center"> Proyek </h1>
+        <!-- Section Projects / Portfolio -->
+        <section id="projects" class="portfolio">
+            <div class="card">
+                <img src="nusant.png" alt="Proyek 1" />
+                <h3>Proyek 1</h3>
+                <p>Proyek Website pertama dengan role saya sebagai fullstack</p>
+            </div>
+            <div class="card">
+                <img src="fig.png" alt="Proyek 2" />
+                <h3>Proyek 2</h3>
+                <p>Prototype dari Website.</p>
+            </div>
+            <div class="card">
+                <img src="per.png" alt="Proyek 3" />
+                <h3>Proyek 3</h3>
+                <p>Project awal belajar coding.</p>
+            </div>
+        </section>
+        <!---- Footer -->
+    <div style="text-align: center; color: linear-gradient(lightblue 100%, green 0%, lime 100%  );">
+        <small>&copy; 2025 Jevon • SMK Telkom Sidoarjo</small>
+    </div>
+
+        <!--Link to javascript file-->
+        <script src="porto.js"></script>
+    </body>
+</html>
