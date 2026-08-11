@@ -1,102 +1,326 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Portofolio</title>
-        <!---Link to font awesome website-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!----link to css file for styles-->
-        <link rel="stylesheet" href="porto.css">
-    </head>
-    <body>
-        <!----header with logo and navigation-->
-        <header>
-            <a href="#" class="logo">
-                <i class="fas fa-code logo-icon"></i>
-                <span class="logo-text">Jevon</span>
-            </a>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Jevon Agnibrata</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="porto.css">
+</head>
+<body>
 
-            <nav>
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">
+            <i class="fas fa-code logo-icon"></i>
+            <span class="logo-text">Jevon</span>
+        </a>
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">Tentang Saya</a></li>
+                <li><a href="#education" class="nav-link">Pendidikan</a></li>
+                <li><a href="#skills" class="nav-link">Keahlian</a></li>
+                <li><a href="#projects" class="nav-link">Proyek</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home / Hero -->
+    <section class="hero" id="home">
+        <div class="content">
+            <h1>Jevon Agnibrata</h1>
+            <h2>Siswa <span class="typing-text">SMK Telkom Sidoarjo</span></h2>
+            <p>
+                Saya siswa kelas X SIJA 2 yang tertarik dengan pengembangan web dan desain UI/UX. 
+                Senang membangun sesuatu yang bermanfaat dari kode.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-folder-open"></i> Lihat Proyek
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Hubungi Saya
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:jevon.agnibrata@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="profile-container">
+            <div class="border-outer"></div>
+            <div class="border-middle"></div>
+            <div class="border-inner"></div>
+            <div class="border-container"></div>
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring"></div>
+            <img src="profile.jpeg" alt="Foto Profil Jevon" class="profile-img">
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-grid">
+                <div class="about-img-wrapper">
+                    <img src="profile.jpeg" alt="Foto Jevon" class="about-img">
                 </div>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!----hero section-->
-        <section class="hero" id="home">
-            <div class="content">
-                <h1>Jevon Agnibrata</h1>
-                <h2>Junior <span class="typing-text">Frontend Developer</span></h2>
-                <p>
-                    I create responsive, user-friendly web experiences with cutting-edge 
-                    technology. With over 4 Months of experience in frontend development, 
-                    I specialize in turning complex problems into simple, beautiful designs.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-code"></i>View Projects
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-paper-plane"></i>Contact Me
-                    </a>
+                <div class="about-content">
+                    <h3>Halo, saya Jevon!</h3>
+                    <p>
+                        Saya berusia 15 tahun dan saat ini duduk di bangku kelas X SIJA 2 
+                        SMK Telkom Sidoarjo. Jurusan saya adalah SIJA (Sistem Informasi Jaringan dan Aplikasi).
+                    </p>
+                    <p>
+                        Saya mulai tertarik dengan coding sejak masuk SMK. Saat ini saya sedang 
+                        belajar membuat website mulai dari tampilan depan hingga bagian belakangnya.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <span><strong>Nama:</strong> Jevon Agnibrata</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span><strong>Kelas:</strong> X SIJA 2</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-school"></i>
+                            <span><strong>Jurusan:</strong> SIJA</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-building"></i>
+                            <span><strong>Sekolah:</strong> SMK Telkom Sidoarjo</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-heart"></i>
+                            <span><strong>Hobi:</strong> Coding, UI/UX Design, Badminton</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span><strong>Email:</strong> jevon.agnibrata@gmail.com</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pendidikan -->
+    <section id="education" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Pendidikan</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025 - Sekarang</span>
+                        <h3>SMK Telkom Sidoarjo</h3>
+                        <p>Jurusan SIJA (Sistem Informasi Jaringan dan Aplikasi). Fokus pada pemrograman web, jaringan komputer, dan basis data.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2022 - 2025</span>
+                        <h3>SMP</h3>
+                        <p>Masa SMP yang membuka minat saya pada teknologi dan komputer.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2016 - 2022</span>
+                        <h3>SD</h3>
+                        <p>Awal perjalanan pendidikan formal saya.</p>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="profile-container">
-                <div class="border-outer"></div>
-                <div class="border-middle"></div>
-                <div class="border-inner"></div>
-                <div class="border-container"></div>
-                <div class="pulse-ring"></div>
-                <div class="pulse-ring"></div>
-                <div class="pulse-ring"></div>
-                <img src="profile.jpeg" width="240px" alt="profile picture" class="profile-img">
+    <!-- Keahlian -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Keahlian</h2>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <i class="fab fa-js skill-icon"></i>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="60"></div>
+                    </div>
+                    <span class="skill-percent">60%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <i class="fab fa-php skill-icon"></i>
+                    <h3>PHP</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="55"></div>
+                    </div>
+                    <span class="skill-percent">55%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <i class="fab fa-figma skill-icon"></i>
+                    <h3>UI/UX Design</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="70"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <i class="fas fa-database skill-icon"></i>
+                    <h3>MySQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="50"></div>
+                    </div>
+                    <span class="skill-percent">50%</span>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Section About (tambahkan id about agar link navigasi berfungsi) -->
-        <section id="about" style="padding: 40px 20px; max-width: 1200px; margin: 0 auto; color: #c2c6d3;">
-            <h1 style="text-align: center;">Jevon</h1>
-            <p>Perkenalkan nama saya jevon dan aku berusia 15 tahun. Saat ini aku berumur 15 tahun dan aku memiliki beberapa proyek seperti dibawah ini.</p>
-        </section>
-        <h1 style="text-align: center"> Proyek </h1>
-        <!-- Section Projects / Portfolio -->
-        <section id="projects" class="portfolio">
-            <div class="card">
-                <img src="nusant.png" alt="Proyek 1" />
-                <h3>Proyek 1</h3>
-                <p>Proyek Website pertama dengan role saya sebagai fullstack</p>
+    <!-- Proyek -->
+    <section id="projects" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Pengalaman / Proyek</h2>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="nusant.png" alt="Nusantara Journey">
+                    </div>
+                    <div class="project-info">
+                        <h3>Nusantara Journey</h3>
+                        <p>Website pariwisata Indonesia dengan fitur booking tiket. Saya membangunnya sebagai fullstack developer menggunakan PHP dan MySQL.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="fig.png" alt="Figma Prototype">
+                    </div>
+                    <div class="project-info">
+                        <h3>Figma Prototype</h3>
+                        <p>Desain UI/UX lengkap untuk website travel menggunakan Figma. Mencakup halaman landing, detail destinasi, form booking, dan admin panel.</p>
+                        <div class="project-tags">
+                            <span>Figma</span>
+                            <span>UI/UX</span>
+                            <span>Prototype</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="per.png" alt="Website Profile SMK">
+                    </div>
+                    <div class="project-info">
+                        <h3>Website Profile SMK</h3>
+                        <p>Website profile sederhana untuk SMK Telkom Sidoarjo yang menampilkan informasi jurusan dan program sekolah.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <img src="fig.png" alt="Proyek 2" />
-                <h3>Proyek 2</h3>
-                <p>Prototype dari Website.</p>
-            </div>
-            <div class="card">
-                <img src="per.png" alt="Proyek 3" />
-                <h3>Proyek 3</h3>
-                <p>Project awal belajar coding.</p>
-            </div>
-        </section>
-        <!---- Footer -->
-    <div style="text-align: center; color: linear-gradient(lightblue 100%, green 0%, lime 100%  );">
-        <small>&copy; 2025 Jevon • SMK Telkom Sidoarjo</small>
-    </div>
+        </div>
+    </section>
 
-        <!--Link to javascript file-->
-        <script src="porto.js"></script>
-    </body>
+    <!-- Kontak -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Kontak</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info reveal">
+                    <h3>Mari Terhubung</h3>
+                    <p>Jika ada yang ingin ditanyakan atau ingin berkolaborasi, silakan hubungi saya melalui:</p>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <p>jevon.agnibrata@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <div>
+                                <span>Instagram</span>
+                                <p>@jevonagnibrata</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Lokasi</span>
+                                <p>Sidoarjo, Jawa Timur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form reveal" onsubmit="event.preventDefault(); alert('Pesan terkirim!');">
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="email@contoh.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Jevon Agnibrata • SMK Telkom Sidoarjo • X SIJA 2</p>
+            <div class="footer-social">
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="porto.js"></script>
+</body>
 </html>
